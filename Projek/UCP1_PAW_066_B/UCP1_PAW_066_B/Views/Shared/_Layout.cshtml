@@ -6,6 +6,8 @@
     <title>@ViewData["Title"] - UCP1_PAW_066_B</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"/>
+
 </head>
 <body>
     <header>
@@ -16,6 +18,22 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link text-light dropdown-toggle" data-toggle="dropdown">Menu<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Adminds" asp-action="Index">Admin</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Costumers" asp-action="Index">Kastemer</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Produks" asp-action="Index">Prodaks</a></li>
+                                <li><a class="nav-link text-dark" asp-area="" asp-controller="Transaksi" asp-action="Index">Cek Transaksi</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
